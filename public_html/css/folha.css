@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#E6E6FA;		
+	margin:0px;	
+	padding:0px;
+}
+
+#banner {
+	margin: auto;
+	width: 1000px;
+	height: auto;
+}
+
+#wrapper {
+	width: 1020px;
+	height: 1400px;
+	margin: 10px auto;
+	border: 1px solid #0F0;
+}
+
+#sessaoprincipal{ 
+	background-color:#E6E6FA;
+	width:1000px; 	/**Largura do site*/                   
+	margin:10px auto;                   
+}
+
+#principaltopo{			
+	background-color:#E6E6FA;  /** configuracao da cor de fundo do menu */
+	width:1000px;	 /** Largura do site*/	
+	//margin:10px 300px 0px 160px;
+	padding:0px;
+	border:0px;
+}
+
+#slides{
+	float:left;
+	background-color:#999;
+	background:url("../imagens/fotosAHNT_SL/pico_ibituruna_gov.jpg");
+	background-repeat: no-repeat; 
+	background-size:1000px 230px;
+	border: 1px solid #171;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	width:1000px;
+	height:200px;
+}
+
+#palma{	
+	width: auto;
+	height: 200px;
+	padding:0px;
+	border:0px;
+	margin-left: 120px;
+}
+
+.mainNav {
+    float: left;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+	margin: 10px auto;
+}
+
+.mainNav ul {
+	list-style: none;
+	padding: 0;
+	box-shadow: #696969 0.9em 0.5em 0.3em;/* Sombreamento*/	
+}
+.mainNav li {
+    display: inline-block;
+    margin-right: -.25em;
+}
+
+.mainNav a {	
+    background-color: #fff;
+    backface-visibility: hidden;
+    color: #171; /*===================cor da letra do menu=================*/
+    display: block;
+    font: bold 1em/3 sans-serif;/*==============largura dos blocos=============*/
+    padding: 0 1.51em;/*========================mantem os blocos juntos =========================*/
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+    transition: .9s;/*==============================veloscidade em que os blocos se movimentam====================*/ 
+    transform-origin: 0% 50%;
+    transform-style: preserve-3d;
+    width: 7.4em;/*======================tamanho dos quadros========================*/
+}
+
+.mainNav a:after {
+box-shadow: #696969 0.9em 0.5em 0.3em;/* Sombreamento ao virar-se*/	
+    background-color: #eee;
+    color: inherit;
+    content: attr(data-title);
+    height: 100%;
+    left: 0;
+    line-height: 3;
+    position: absolute;
+    top: 100%;
+    transform: rotateX(-90deg);
+    transform-origin: 0 0;
+    width: 100%;
+}
+
+.mainNav a:before {
+    background-color: #eee;
+    bottom: 0;
+    content: '';
+    height: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: 0 0;
+    width: 3em;
+}
+
+.mainNav li:nth-child(-n+2) a:before {
+    transform: rotateY(90deg) translateZ(3em);
+}
+
+.mainNav li:nth-child(n+3) a:before {
+    left: 0;
+    right: auto;
+    transform: rotateY(90deg);
+}
+
+.mainNav li:hover a {
+    transform: rotateX(90deg) translateY(-1.5em) translateZ(1.5em);
+}
+
+.mainNav .current:hover a {
+   transform: rotateX(0deg) translateY(0) translateZ(0);
+}
+
+#corpo{
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	width:1000px;
+	height: 500px;
+	margin:20px 5px;
+	text-align:justify;	
+	border: 1px solid #F00;
+	color: #0CC;
+}
+
+/**configuracao dos arquivos fotograficos    =====================================================================================*/
+#af{
+	float:left;
+	background-color:#f0fff0;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	 
+	margin:30px auto;
+	width:300px;
+	height:200px;
+}
+
+#fotos{
+	text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+}
+
+/**configuracao dos anexos*/
+#anexos{
+	float:left;
+	width:300px;
+	height:200px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	background-color:#f0fff0;
+	margin:30px 50px;
+}
+
+#anex{
+	text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+}
+
+
+/** configuracao apresentacao de videos*/
+#video{	
+	float:right;
+	width:300px;
+	height:200px;
+	padding:0px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/
+	background-color:#FFF;
+	margin: 30px auto;
+}
+
+#vide{
+	text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+}	
+	
+/**configuracao  entrevista da semana**/
+#entrevista{
+	float: left;
+	width:300px;
+	height:200px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	background-color:#f0fff0;
+	margin:30px auto;
+	}
+#entrevi{
+	text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+}
+
+/**configuracao dos avisos*/
+#avisos{
+	width:300px;
+	height:200px;
+	padding:0px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	 
+	background-color:#FFF;
+	float: left;
+	margin: 30px 50px;	
+}
+	
+#avs{
+	margin:15px auto;
+	width:280px;
+	height:150px;
+}
+
+#avis{
+	text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+}
+
+/**configuracao dos produtos da AHNT*/
+#produtos{
+	padding:0px;
+	background-color:#FFF;
+	margin: 30px auto;
+	float:right;
+	width:300px;
+	height:200px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	 
+}
+
+#prod{
+	margin:auto;
+}
+
+#produt{
+	text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+}

@@ -1,0 +1,339 @@
+<style type="text/css">
+
+		
+
+		
+body{
+background-color:#E6E6FA;
+		
+margin:0px;	
+padding:0px;
+        
+		
+}
+====================================================================================
+
+	
+ 
+
+	div.sessaoprincipal{
+ 
+	background-color:#E6E6FA;
+  	 
+	        
+
+	width:1000px; 	/**Largura do site*/ 
+                  
+	margin:10px auto;
+                   
+	  }
+
+
+/*configuracao da div principal do topo*/
+			
+	div#principaltopo{
+			
+	background-color:#E6E6FA;  /** configuracao da cor de fundo do menu */
+				
+	width:1000px;	 /** Largura do site*/	
+			
+	margin:10px 300px 0px 160px;
+			
+	padding:0px;
+			
+	border:0px;
+			
+			
+	}
+
+
+/* configuracao do banner */
+		#banner{
+		border:0px;
+		padding:0px;
+		width:1000px;	/**Largura do banner no site*/
+		height:130px;
+		margin:0px 200px 10px 160px;
+		box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/
+		}
+
+
+/* configuracao da apresentacao dos slides */
+	#slides{
+	float:left;
+	background-color:#999;
+	background:url("ibituruna.png");
+	background-repeat: no-repeat; 
+	background-size:1000px 230px;
+	border: 1px solid #171;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	margin:10px auto 0px 160px;
+	width:1000px;
+	height:200px;
+	}
+	
+	#palma{
+	
+	padding:0px;
+	border:0px;
+	margin:auto -124px 0px 100px;
+	}
+/**configuracao dos menus*/
+
+.mainNav {
+    float: left;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+.mainNav ul {
+  list-style: none;
+  padding: 0;
+}
+.mainNav li {
+    display: inline-block;
+    margin-right: -.25em;
+}
+.mainNav a {
+box-shadow: #696969 0.9em 0.5em 0.3em;/* Sombreamento*/	
+    background-color: #fff;
+    backface-visibility: hidden;
+    color: #171; /*===================cor da letra do menu=================*/
+    display: block;
+    font: bold 1em/3 sans-serif;/*==============largura dos blocos=============*/
+    padding: 0 1.51em;/*========================mantem os blocos juntos =========================*/
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25);
+    transition: .9s;/*==============================veloscidade em que os blocos se movimentam====================*/ 
+    transform-origin: 0% 50%;
+    transform-style: preserve-3d;
+    width: 7.4em;/*======================tamanho dos quadros========================*/
+}
+.mainNav a:after {
+box-shadow: #696969 0.9em 0.5em 0.3em;/* Sombreamento ao virar-se*/	
+    background-color: #eee;
+    color: inherit;
+    content: attr(data-title);
+    height: 100%;
+    left: 0;
+    line-height: 3;
+    position: absolute;
+    top: 100%;
+    transform: rotateX(-90deg);
+    transform-origin: 0 0;
+    width: 100%;
+}
+.mainNav a:before {
+    background-color: #eee;
+    bottom: 0;
+    content: '';
+    height: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: 0 0;
+    width: 3em;
+}
+.mainNav li:nth-child(-n+2) a:before {
+    transform: rotateY(90deg) translateZ(3em);
+}
+.mainNav li:nth-child(n+3) a:before {
+    left: 0;
+    right: auto;
+    transform: rotateY(90deg);
+}
+.mainNav li:hover a {
+    transform: rotateX(90deg) translateY(-1.5em) translateZ(1.5em);
+}
+.mainNav .current:hover a {
+   transform: rotateX(0deg) translateY(0) translateZ(0);
+}
+
+
+/**configuracao dos arquivos fotograficos    =====================================================================================*/
+	#af{
+	float:left;
+	background-color:#f0fff0;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	 
+	margin:30px auto 10px 160px;
+	width:300px;
+	height:200px;
+	}
+
+	#fotos{
+
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+	}
+/**configuracao dos anexos*/
+	#anexos{
+	float:left;
+	width:300px;
+	height:200px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	background-color:#f0fff0;
+	margin:30px 10px 0px 50px;
+	
+	}
+#anex{
+
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+	}
+
+
+/** configuracao apresentacao de videos*/
+	#video{
+	
+	background-color:#FFF;
+	margin:30px 160px 0px auto;
+	float:right;
+	width:300px;
+	padding:0px;
+	height:200px;
+	 box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/
+		}
+	#vd{
+	margin:auto;
+	}
+	#vide{
+
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+	}
+	
+	#video a{
+	ext-decoration: none;
+   	margin:0px auto;
+	float:left;	 
+	color:blue;
+	
+	}
+	
+	
+/**configuracao  entrevista da semana**/
+	#entrevista{
+	float:right;
+	width:300px;
+	height:200px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	
+	background-color:#f0fff0;
+	margin:20px 860px 20px auto;
+	}
+#entrevi{
+
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+	}
+
+/**configuracao dos avisos*/
+	#avisos{
+	width:300px;
+	height:200px;
+	padding:0px;
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	 
+	background-color:#FFF;
+	float:right;
+	margin:-220px 510px 10px auto;
+	
+	}
+	#avs{
+	margin:15px auto;
+	width:280px;
+	height:150px;
+	}
+#avis{
+
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+	}
+
+/**configuracao dos produtos da AHNT*/
+	#produtos{
+		padding:0px;
+		background-color:#FFF;
+		margin:-220px 160px 0px auto;
+		float:right;
+		width:300px;
+		height:200px;
+		box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/	 
+		}
+	#prod{
+	margin:auto;
+	}
+
+#produt{
+
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	float:left;
+	margin:-20px auto;
+	text-align:justify;
+	color:#171;
+	}
+
+
+
+
+/*confguracao do rodape*/
+					
+
+#footer  {  	
+						
+	clear: both;	
+						
+	background-color: #eee;  
+						
+	width:1000px;
+						
+	height:100px;
+						
+	
+		box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/				
+	text-align:center;
+	margin:10px auto;
+ 	
+						
+	} 
+	#letra{
+
+color:#171;
+font-size:20px;
+text-shadow: #000 1px 1px 1px, white -1px -1px 1px;
+	}
+
+  
+#wrapper{
+	font-weight:bold; 
+	text-align:center;
+	
+	}
+	#corpo{
+	box-shadow: #696969 0.9em 0.5em 0.3em;  /**Sombreamento*/
+	
+	width:auto;
+	//margin:10px 20px auto 20px;
+	text-align:justify;
+	
+	}
+	
+	#tabela{
+	width:200px;
+	
+	}
+		</style>

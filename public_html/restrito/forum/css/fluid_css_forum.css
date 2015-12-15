@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		3;
+	dw-num-cols-tablet:		6;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 93.3333%;
+	padding-left: 3.3333%;
+	padding-right: 3.3333%;
+}
+
+#linha {
+	width: 900px;
+	margin: auto;
+}
+
+#linha #logo {
+	margin: 0px 10px;
+}
+
+#corpo {
+	margin: auto;
+	width: 900px;
+	height: auto;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
+
+table {
+	width: 880px;
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+
+
+.row {
+	width: 900px;
+	height: 36px;
+	margin: auto;
+	background: #F4F4F4;	
+	border: 1px solid #808080;
+}
+
+
+#cardapio ul li{
+	display: inline-table;
+	padding: 0;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (max-width: 481px) {
+.gridContainer {
+	width: 96.6666%;
+	padding-left: 1.6666%;
+	padding-right: 1.6666%;
+}
+
+#linha {
+	width: auto;
+	margin: auto;
+}
+
+#linha #logo {
+	margin: 0px 10px;
+}
+
+#linha #logo img {
+	//margin: 5px auto;
+	width: 89px;
+	height: 20px;
+}
+
+#corpo {
+	clear: both;
+	float: left;
+	margin: auto;
+	width: auto;
+	display: block;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
+
+.row {
+	width: auto;
+	height: auto;
+	margin: auto;
+	background: #F4F4F4;	
+	border: 1px solid #808080;
+}
+
+#cardapio ul li{
+	//display: inherit;
+	padding: 0;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (max-width: 769px) {
+.gridContainer {
+	width: 98.3333%;
+	max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;
+	margin: auto;
+}
+
+#linha {
+	width: auto;
+	margin: auto;
+	height: auto;
+}
+
+#linha #logo {
+	margin: 0px 10px;
+}
+
+#linha #logo img {
+	margin: 5px auto;
+	height: 40px;
+}
+
+
+#corpo {
+	margin: auto;
+	width: auto;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #808080;
+}
+
+table {
+	width: auto;
+	margin: auto;
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+
+
+.row {
+	width: auto;
+	height: auto;
+	margin: auto;
+	background: #F4F4F4;	
+	border: 1px solid #808080;
+}
+
+#cardapio ul li{
+	display: inline-table;
+	padding: 0;
+}
+}
